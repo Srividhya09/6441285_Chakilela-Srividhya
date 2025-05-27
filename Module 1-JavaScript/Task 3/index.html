@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Local Community Event Portal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    .event-card {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .event-card h2 {
+      margin-top: 0;
+      color: #27ae60;
+    }
+    .event-card p {
+      font-size: 1.1em;
+      margin: 8px 0;
+    }
+    .register-btn {
+      padding: 10px 15px;
+      font-size: 1em;
+      background-color: #27ae60;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .register-btn:hover {
+      background-color: #219150;
+    }
+    .message {
+      margin-top: 10px;
+      font-weight: bold;
+      font-size: 1em;
+      color: #e74c3c;
+    }
+  </style>
+</head>
+<body>
+  <h1>Upcoming Events</h1>
+
+  <div id="events-container"></div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

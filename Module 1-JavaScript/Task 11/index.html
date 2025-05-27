@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Community Event Registration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background: #f9f9f9;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      width: 300px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .error {
+      color: red;
+      font-size: 0.9em;
+    }
+
+    button {
+      background: #28a745;
+      color: white;
+      padding: 10px;
+      border: none;
+      width: 100%;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #218838;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Register for an Event</h1>
+  <form id="registrationForm">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" required />
+    <div id="nameError" class="error"></div>
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" required />
+    <div id="emailError" class="error"></div>
+
+    <label for="event">Select Event</label>
+    <select id="event" name="event">
+      <option value="">--

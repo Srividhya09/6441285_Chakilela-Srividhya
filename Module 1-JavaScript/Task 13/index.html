@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Event Registration Debugging</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+    }
+
+    form {
+      max-width: 400px;
+      margin-bottom: 20px;
+    }
+
+    input, select, button {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 8px;
+      font-size: 16px;
+    }
+
+    .message {
+      font-weight: bold;
+    }
+
+    .success {
+      color: green;
+    }
+
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Event Registration</h2>
+
+  <form id="registrationForm">
+    <input type="text" id="name" placeholder="Your Name" required />
+    <input type="email" id="email" placeholder="Your Email" required />
+    <select id="event" required>
+      <option value="">-- Select Event --</option>
+      <option value="Yoga Workshop">Yoga Workshop</option>
+      <option value="Art Exhibition">Art Exhibition</option>
+      <option value="Clean-up Drive">Clean-up Drive</option>
+    </select>
+    <button type="submit">Register</button>
+  </form>
+
+  <div id="responseMsg" class="message"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

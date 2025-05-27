@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Local Community Event Portal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    #event-details {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+
+    #event-details h2 {
+      margin-top: 0;
+      color: #27ae60;
+    }
+
+    #event-details p {
+      font-size: 1.1em;
+      margin: 8px 0;
+    }
+
+    #register-btn {
+      display: block;
+      width: 100%;
+      padding: 12px 0;
+      font-size: 1.2em;
+      background-color: #27ae60;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    #register-btn:hover {
+      background-color: #219150;
+    }
+
+    #message {
+      margin-top: 15px;
+      font-weight: bold;
+      font-size: 1.1em;
+      color: #e74c3c;
+      text-align: center;
+      min-height: 1.5em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Event Registration</h1>
+
+  <div id="event-details"></div>
+
+  <button id="register-btn">Register for Event</button>
+
+  <p id="message"></p>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
