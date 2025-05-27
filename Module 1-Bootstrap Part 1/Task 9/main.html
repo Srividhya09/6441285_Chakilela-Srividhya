@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Exercise 9.2 - Button Groups with Toggles</title>
+  <link rel="stylesheet" href="bootstrap.min.css" />
+  <style>
+    body {
+      padding: 30px;
+      max-width: 600px;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <h4>Button Group</h4>
+  <div class="btn-group mb-4" role="group" aria-label="Basic example">
+    <button type="button" class="btn btn-primary">Left</button>
+    <button type="button" class="btn btn-primary">Middle</button>
+    <button type="button" class="btn btn-primary">Right</button>
+  </div>
+
+  <h4>Toggle Buttons with Checkboxes</h4>
+  <div class="btn-group" role="group" aria-label="Checkbox toggle buttons">
+    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off" />
+    <label class="btn btn-outline-primary" for="btncheck1">Checkbox 1</label>
+
+    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off" />
+    <label class="btn btn-outline-primary" for="btncheck2">Checkbox 2</label>
+
+    <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off" />
+    <label class="btn btn-outline-primary" for="btncheck3">Checkbox 3</label>
+  </div>
+
+  <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>

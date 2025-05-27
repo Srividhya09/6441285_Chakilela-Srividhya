@@ -1,0 +1,43 @@
+1. CSS Folder
+Purpose:
+This folder contains all the styles that define how our web page looks (layout, colors, spacing, typography, etc.).
+
+bootstrap.css:
+
+This is the full version with readable formatting and comments.
+
+Good for learning and debugging.
+
+bootstrap.min.css:
+
+Minified version (all spaces and comments removed).
+
+Smaller in size, used for production websites to improve loading speed.
+
+2. JS Folder
+Purpose:
+This contains JavaScript files that power Bootstrap's interactive components like modals, dropdowns, tooltips, carousels, etc.
+
+bootstrap.bundle.js:
+
+Contains Bootstrap’s JavaScript and Popper.js (required for tooltips, dropdowns, etc.).
+
+Unminified, useful for understanding or debugging.
+
+bootstrap.bundle.min.js:
+
+Minified version, best for real use on websites.
+
+If you only include bootstrap.js without the "bundle", you must separately include popper.js — that’s why the bundle version is preferred.
+
+3. Icons Folder (Optional)
+Purpose:
+If downloaded, this folder contains the Bootstrap Icons – a set of scalable vector icons.
+
+Includes files like:
+
+bootstrap-icons.css
+
+font files (.woff2, .ttf, etc.)
+
+These icons are similar to Font Awesome and can be easily used in web pages.

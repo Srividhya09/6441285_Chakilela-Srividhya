@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Exercise 10.2 - Tabbed Navigation</title>
+  <link rel="stylesheet" href="bootstrap.min.css" />
+</head>
+<body style="padding: 30px; max-width: 600px; margin: auto;">
+
+  <h3>Nav Tabs</h3>
+  <ul class="nav nav-tabs mb-4" id="tabExample" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+    </li>
+  </ul>
+  <div class="tab-content mb-5" id="tabExampleContent">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">This is the Home tab content.</div>
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">This is the Profile tab content.</div>
+    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">This is the Contact tab content.</div>
+  </div>
+
+  <h3>Nav Pills</h3>
+  <ul class="nav nav-pills" id="pillsExample" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="pill-home-tab" data-bs-toggle="pill" data-bs-target="#pill-home" type="button" role="tab" aria-controls="pill-home" aria-selected="true">Home</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="pill-profile-tab" data-bs-toggle="pill" data-bs-target="#pill-profile" type="button" role="tab" aria-controls="pill-profile" aria-selected="false">Profile</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="pill-contact-tab" data-bs-toggle="pill" data-bs-target="#pill-contact" type="button" role="tab" aria-controls="pill-contact" aria-selected="false">Contact</button>
+    </li>
+  </ul>
+  <div class="tab-content mt-3" id="pillsExampleContent">
+    <div class="tab-pane fade show active" id="pill-home" role="tabpanel" aria-labelledby="pill-home-tab">Content for Pills Home.</div>
+    <div class="tab-pane fade" id="pill-profile" role="tabpanel" aria-labelledby="pill-profile-tab">Content for Pills Profile.</div>
+    <div class="tab-pane fade" id="pill-contact" role="tabpanel" aria-labelledby="pill-contact-tab">Content for Pills Contact.</div>
+  </div>
+
+<script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>

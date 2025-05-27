@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Exercise 8.2 - Login Form with Form Floating</title>
+  <link rel="stylesheet" href="bootstrap.min.css" />
+  <style>
+    body {
+      padding: 30px;
+      max-width: 400px;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 class="mb-4">Login</h2>
+  
+  <form>
+    <div class="form-floating mb-3">
+      <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com" />
+      <label for="floatingEmail">Email address</label>
+    </div>
+
+    <div class="form-floating mb-3">
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Password" />
+      <label for="floatingPassword">Password</label>
+    </div>
+
+    <button type="submit" class="btn btn-primary w-100">Login</button>
+  </form>
+
+  <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>
