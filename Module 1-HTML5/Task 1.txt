@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Community Event Portal</title>
+</head>
+<body>
+    <nav>
+        <!-- Navigation links will go here -->
+    </nav>
+
+    <main>
+        <!-- Main content will go here -->
+    </main>
+
+    <footer>
+        <!-- Footer content will go here -->
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Event Preferences</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      background-color: #f0f8ff;
+    }
+
+    label, select, button {
+      display: block;
+      margin: 15px 0;
+      font-size: 16px;
+    }
+
+    select {
+      padding: 8px;
+      width: 250px;
+    }
+
+    button {
+      padding: 10px 15px;
+      background-color: #0078d7;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #005fa3;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Select Your Preferred Event Type</h2>
+
+  <label for="eventType">Choose Event Type:</label>
+  <select id="eventType">
+    <option value="">-- Select --</option>
+    <option value="Yoga">Yoga Workshop</option>
+    <option value="Music">Music Concert</option>
+    <option value="Art">Art Exhibition</option>
+    <option value="Tech">Tech Meetup</option>
+  </select>
+
+  <button onclick="clearPreferences()">Clear Preferences</button>
+
+  <script>
+    const eventDropdown = document.getElementById("eventType");
+
+    // Load preference on page load
+    window.onload = () => {
+      const savedType = localStorage.getItem("preferredEvent");
+      if (savedType) {
+        eventDropdown.value = savedType;
+      }
+    };
+
+    // Save preference when changed
+    eventDropdown.onchange = () => {
+      const selectedValue = eventDropdown.value;
+      if (selectedValue) {
+        localStorage.setItem("preferredEvent", selectedValue);
+        sessionStorage.setItem("lastSelected", selectedValue); // optional sessionStorage usage
+      }
+    };
+
+    // Clear local and session storage
+    function clearPreferences() {
+      localStorage.removeItem("preferredEvent");
+      sessionStorage.clear();
+      eventDropdown.value = "";
+      alert("Preferences cleared!");
+    }
+  </script>
+
+</body>
+</html>

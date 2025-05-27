@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Debugging Practice</title>
+  <style>
+    /* Initial style that you can modify live */
+    #debugBox {
+      width: 200px;
+      height: 100px;
+      background-color: lightblue;
+      margin: 20px auto;
+      text-align: center;
+      line-height: 100px;
+      font-weight: bold;
+      border: 2px solid navy;
+      /* Intentional issue: wrong color for text */
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Debugging Practice</h2>
+
+  <div id="debugBox">Hello World</div>
+  
+  <button id="changeBtn">Change Color</button>
+
+  <script>
+    console.log("Script loaded - debugging test");
+
+    const box = document.getElementById("debugBox");
+    const btn = document.getElementById("changeBtn");
+
+    btn.addEventListener("click", () => {
+      console.log("Button clicked");
+      
+      // Intentional bug: typo in property name
+      box.style.backgrounColor = "orange"; // BUG: should be backgroundColor
+    });
+
+    // Breakpoint here: reload and watch variables
+    let count = 0;
+    function incrementCount() {
+      count++;
+      console.log("Count is now: ", count);
+    }
+
+    incrementCount();
+    incrementCount();
+
+  </script>
+
+</body>
+</html>
