@@ -1,0 +1,23 @@
+.adminTable {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.adminTable th,
+.adminTable td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  background-color: #fefefe;
+}
+
+.adminTable th {
+  background-color: #007BFF;
+  color: white;
+}
+
+.adminTable tr:nth-child(even) {
+  background-color: #f2f2f2;
+}

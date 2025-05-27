@@ -1,0 +1,19 @@
+.eventCard {
+  border: 2px solid #007BFF;
+  padding: 20px;
+  margin: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.highlight {
+  outline: 2px dashed orange;
+}
+
+.hidden {
+  visibility: hidden; /* Takes up space but not visible */
+}
+
+.none {
+  display: none; /* Removed from layout flow */
+}

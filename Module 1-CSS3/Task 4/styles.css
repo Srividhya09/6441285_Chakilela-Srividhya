@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f0f0f0; 
+  background-image: url('https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=1950&q=80');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  color: #333333;
+}
+
+#mainHeader {
+  background-color: rgba(0, 123, 255, 0.85); /* RGBA background */
+  color: #ffffff;
+  padding: 25px;
+  text-align: center;
+}
+
+.sectionHeader {
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  padding: 15px;
+  text-align: center;
+}
+
+.sectionHeader h2 {
+  color: white;
+}
+.eventCard {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-left: 5px solid #007BFF;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}

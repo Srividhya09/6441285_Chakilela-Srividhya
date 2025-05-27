@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Community Event Portal - Box Model</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h2>Upcoming Events</h2>
+
+  <div class="eventCard">
+    <h3>Yoga Session</h3>
+    <p>A relaxing community yoga session.</p>
+  </div>
+
+  <div class="eventCard hidden">
+    <h3>Hidden Event</h3>
+    <p>This event is hidden using <code>visibility: hidden</code>.</p>
+  </div>
+
+  <div class="eventCard none">
+    <h3>Removed Event</h3>
+    <p>This event is removed from layout using <code>display: none</code>.</p>
+  </div>
+
+  <h2>Register for an Event</h2>
+  <form>
+    <label>Name: <input type="text" name="name" class="highlight" /></label><br><br>
+    <label>Email: <input type="email" name="email" /></label><br><br>
+    <label>Event Type:
+      <select class="highlight">
+        <option>Yoga</option>
+        <option>Art</option>
+      </select>
+    </label>
+  </form>
+
+</body>
+</html>
