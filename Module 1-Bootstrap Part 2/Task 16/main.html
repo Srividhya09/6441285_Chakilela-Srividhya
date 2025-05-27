@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Exercise 16.2 - Badge Overlay</title>
+  <link rel="stylesheet" href="bootstrap.min.css" />
+  <style>
+    .img-wrapper {
+      width: 200px;
+      position: relative;
+    }
+    .badge-custom {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+  </style>
+</head>
+<body class="p-5">
+
+  <h2 class="mb-4">Image with Badge</h2>
+
+  <div class="img-wrapper">
+    <img src="https://picsum.photos/200" alt="Sample" class="img-fluid rounded border border-secondary">
+    <span class="badge bg-danger badge-custom">New</span>
+  </div>
+
+<script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>

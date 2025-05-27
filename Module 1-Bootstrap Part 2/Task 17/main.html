@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 17.2 - Icon-Only Buttons</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap-icons.css">
+  <style>
+    .icon-btn {
+      width: 48px;
+      height: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body class="p-5 text-center">
+
+  <h2>Icon-Only Buttons</h2>
+
+  <button class="btn btn-primary icon-btn me-2" aria-label="Home">
+    <i class="bi bi-house-fill"></i>
+  </button>
+
+  <button class="btn btn-success icon-btn me-2" aria-label="Check">
+    <i class="bi bi-check-lg"></i>
+  </button>
+
+  <button class="btn btn-danger icon-btn" aria-label="Trash">
+    <i class="bi bi-trash-fill"></i>
+  </button>
+
+<script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>
